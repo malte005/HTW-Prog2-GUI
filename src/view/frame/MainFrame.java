@@ -12,6 +12,8 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import util.Helper;
 import javax.swing.ImageIcon;
+import javax.swing.SwingConstants;
+import model.kunde.AKunde;
 import util.PicTool;
 
 /**
@@ -43,17 +45,15 @@ public class MainFrame extends javax.swing.JFrame {
         initComponents();
         this.setTitle("Weinvertrieb");
         Helper.getFrameCenter(this);
-        
+
         // ------------ Test -----------
-//        try {
-//            kv.testCreateKunden();
-//        } catch (Exception ex) {
-//            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        try {
+            kv.testCreateKunden();
+        } catch (Exception ex) {
+            Logger.getLogger(MainFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
         // ------------ Test -----------
-        
         jListKundenliste.setListData(kv.getListe().toArray());
-        
 
         this.setVisible(true);
     }
@@ -71,7 +71,7 @@ public class MainFrame extends javax.swing.JFrame {
         jListKundenliste = new javax.swing.JList();
         panelKundenbild = new javax.swing.JPanel();
         lblUeberschriftKundenbild = new javax.swing.JLabel();
-        lblBild = new javax.swing.JLabel();
+        lblBild = new javax.swing.JLabel(""+SwingConstants.CENTER);
         panelOption = new javax.swing.JPanel();
         lblUeberschriftOptionen = new javax.swing.JLabel();
         btnPicture = new javax.swing.JButton();
@@ -422,9 +422,7 @@ public class MainFrame extends javax.swing.JFrame {
         );
 
         File datei = new File("./pics/FACE25.jpg");
-        ImageIcon pic =  PicTool.loadImageAsThumbNail(datei);
-
-        ImageIcon thumbnail = new ImageIcon (pic.getImage().getScaledInstance(-1, 90, Image.SCALE_DEFAULT));
+        ImageIcon pic =  PicTool.loadImage(datei);
 
         lblBild.setIcon(pic);
 
@@ -540,15 +538,22 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_itemHilfeInfoActionPerformed
 
     private void jRadioButtonEndverbraucherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonEndverbraucherActionPerformed
-        // TODO add your handling code here:
+        File picDatei = new File("./pics/" + "FACE25" + ".jpg");
+        ImageIcon pic = PicTool.loadImage(picDatei);
+        lblBild.setIcon(pic);
+
     }//GEN-LAST:event_jRadioButtonEndverbraucherActionPerformed
 
     private void jRadioButtonGrossverbraucherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonGrossverbraucherActionPerformed
-        // TODO add your handling code here:
+        File picDatei = new File("./pics/" + "FACE27" + ".jpg");
+        ImageIcon pic = PicTool.loadImage(picDatei);
+        lblBild.setIcon(pic);
     }//GEN-LAST:event_jRadioButtonGrossverbraucherActionPerformed
 
     private void jRadioButtonGesellschaftActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonGesellschaftActionPerformed
-        // TODO add your handling code here:
+        File picDatei = new File("./pics/" + "FACE29" + ".jpg");
+        ImageIcon pic = PicTool.loadImage(picDatei);
+        lblBild.setIcon(pic);
     }//GEN-LAST:event_jRadioButtonGesellschaftActionPerformed
 
     private void itemOpenBinaerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemOpenBinaerActionPerformed
@@ -560,11 +565,11 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_itemOpenBinaerActionPerformed
 
     private void itemKundeAendernActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemKundeAendernActionPerformed
-        KundeAendern aendern = new KundeAendern();
+        KundeAendern aendern = new KundeAendern(1, kv);
     }//GEN-LAST:event_itemKundeAendernActionPerformed
 
     private void itemKundeLeschenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemKundeLeschenActionPerformed
-        KundeLoeschen loeschen = new KundeLoeschen();
+        KundeLoeschen loeschen = new KundeLoeschen(1, kv);
     }//GEN-LAST:event_itemKundeLeschenActionPerformed
 
 

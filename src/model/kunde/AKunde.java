@@ -1,6 +1,7 @@
 package model.kunde;
 
 import java.io.Serializable;
+import javax.swing.ImageIcon;
 
 /**
  * Diese Klasse ist die Parent-Klasse zu den einzelnen Kunden.
@@ -24,6 +25,7 @@ public abstract class AKunde implements Serializable {
     protected Adresse anschrift;
     protected double rabatt = 0.0;
     protected String nummer;
+    protected ImageIcon bild;
 
     /**
      * Konstruktor
@@ -34,6 +36,18 @@ public abstract class AKunde implements Serializable {
         this.rabatt = rabatt;
     }
 
+    /**
+     *
+     * @param bild Das Kundenbild wird übergeben.
+     */
+    public abstract  void setBild(ImageIcon bild);
+    
+    /**
+     *
+     * @return Das Bild wird zurückgegeben.
+     */
+    public  abstract ImageIcon getBild();
+    
     /**
      *
      * @return Das Adressen-Objekt wird zurückgegeben.

@@ -103,15 +103,14 @@ public class Kundenverwaltung implements Comparator<AKunde> {
 
         return result;
     }
-    
-    public LinkedList<AKunde> getListe(){
+
+    public LinkedList<AKunde> getListe() {
         return KUNDENLISTE;
     }
-    
+
     public void testCreateKunden() throws Exception {
         KundenNummerVergeber knv = KundenNummerVergeber.getInstance();
-        System.out.println("Anzahl der Kunden eingeben");
-        int anzahl = 100;
+        int anzahl = 2;
         Random ran = new Random();
 
         for (int i = 0; i < anzahl; i++) {
@@ -143,6 +142,24 @@ public class Kundenverwaltung implements Comparator<AKunde> {
 
         }
         System.out.println("Es wurden " + anzahl + " Kunden angelegt.\n");
+    }
+
+    /**
+     *
+     * @param kunde
+     * @param rabatt
+     * @param anschrift
+     */
+    public void aendernKunde(AKunde kunde, Double rabatt, Adresse anschrift) {
+        for (AKunde KUNDE : KUNDENLISTE) {
+            if (KUNDE.getNummer().equals(kunde.getNummer())) {
+                System.err.println("Rabatt vorher: " + KUNDE.getRabatt());
+                System.err.println("Rabatt übergeben: " +rabatt);
+                KUNDE.setAnschrift(anschrift);
+                KUNDE.setRabatt(rabatt);
+                System.err.println("Kunde nachher: " + KUNDE.getRabatt());
+            }
+        }
     }
 
     @Override

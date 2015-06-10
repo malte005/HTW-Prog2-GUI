@@ -107,11 +107,10 @@ public class Adresse implements Serializable {
 
     @Override
     public String toString() {
-        return "\n\tName = " + name
-                + "\n\tStrasse / Hausnummer = " + strasse_hnr
-                + "\n\tPLZ = " + plz
-                + "\n\tOrt = " + ort
-                + "\n----------------------------------------------";
+        return "Name = " + name
+                + "\nStrasse / Hausnummer = " + strasse_hnr
+                + "\nPLZ = " + plz
+                + "\nOrt = " + ort;
     }
 
 }

@@ -334,7 +334,7 @@
         </Property>
       </Properties>
       <AuxValues>
-        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="File datei = new File(&quot;./pics/FACE25.jpg&quot;);&#xa;&#x9;&#x9;ImageIcon pic =  PicTool.loadImageAsThumbNail(datei);&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;ImageIcon thumbnail = new ImageIcon (pic.getImage().getScaledInstance(-1, 90, Image.SCALE_DEFAULT));&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;lblBild.setIcon(pic);&#xa;&#x9;&#x9; &#xa;&#x9;&#x9;lblBild.setPreferredSize(new Dimension(pic.getIconWidth(), pic.getIconHeight()));&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;panelKundenbild.add(lblBild);"/>
+        <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="File datei = new File(&quot;./pics/FACE25.jpg&quot;);&#xa;&#x9;&#x9;ImageIcon pic =  PicTool.loadImage(datei);&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;lblBild.setIcon(pic);&#xa;&#x9;&#x9; &#xa;&#x9;&#x9;lblBild.setPreferredSize(new Dimension(pic.getIconWidth(), pic.getIconHeight()));&#xa;&#x9;&#x9;&#xa;&#x9;&#x9;panelKundenbild.add(lblBild);"/>
       </AuxValues>
 
       <Layout>
@@ -374,6 +374,9 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblBild">
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel(&quot;&quot;+SwingConstants.CENTER)"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>

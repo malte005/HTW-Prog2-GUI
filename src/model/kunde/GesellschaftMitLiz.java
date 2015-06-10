@@ -1,5 +1,7 @@
 package model.kunde;
 
+import javax.swing.ImageIcon;
+
 /**
  * Diese Klasse bilden das Kind-Objekt der Kundenklasse als Gesellschaft mit
  * Lizenzvertrieb.
@@ -122,15 +124,34 @@ public class GesellschaftMitLiz extends AKunde {
     public void setNummer(String nummer) {
         this.nummer = nummer;
     }
+    
+    /**
+     *
+     * @param bild Das Kundenbild wird übergeben.
+     */
+    @Override
+    public void setBild(ImageIcon bild) {
+        this.bild = bild;
+    }
+
+    /**
+     *
+     * @return Das Bild wird zurückgegeben.
+     */
+    @Override
+    public ImageIcon getBild() {
+        return this.bild;
+    }
 
     @Override
     public String toString() {
         return //super.toString() + "\n" + 
                 "Gesellschaft Mit Lizenzvertrieb:"
-                + "\n\tNummer = " + this.nummer
-                + "\n\tVertrieb = " + vertrieb
-                + "\n\tRabatt = " + this.rabatt + " %"
-                + "\nAnschrift: " + this.anschrift;
+                + "\nNummer = " + this.nummer
+//                + "\nVertrieb = " + vertrieb
+                + "\nRabatt = " + this.rabatt + " %"
+//                + "\nAnschrift: " + this.anschrift
+                ;
     }
 
 }

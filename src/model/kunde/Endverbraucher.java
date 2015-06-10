@@ -1,5 +1,7 @@
 package model.kunde;
 
+import javax.swing.ImageIcon;
+
 /**
  * Diese Klasse bilden das Kind-Objekt der Kundenklasse als Endverbraucher.
  *
@@ -50,7 +52,7 @@ public class Endverbraucher extends AKunde {
     public Endverbraucher(Adresse anschrift, double rabatt, boolean bonitaet) {
         this(rabatt, bonitaet);
         this.anschrift = anschrift;
-        
+
     }
 
     /**
@@ -123,14 +125,33 @@ public class Endverbraucher extends AKunde {
         this.nummer = nummer;
     }
 
+    /**
+     *
+     * @param bild Das Kundenbild wird übergeben.
+     */
+    @Override
+    public void setBild(ImageIcon bild) {
+        this.bild = bild;
+    }
+
+    /**
+     *
+     * @return Das Bild wird zurückgegeben.
+     */
+    @Override
+    public ImageIcon getBild() {
+        return this.bild;
+    }
+
     @Override
     public String toString() {
         return // super.toString() +  "\n" +
                 "Endverbraucher:"
-                + "\n\tNummer = " + this.nummer
-                + "\n\tBonitaet = " + this.bonitaet
-                + "\n\tRabatt = " + this.rabatt + " %"
-                + "\nAnschrift:" + this.anschrift;
+                + "\nNummer = " + this.nummer
+                //                + "\nBonitaet = " + this.bonitaet
+                + "\nRabatt = " + this.rabatt + " %" 
+//                + "\nAnschrift:" + this.anschrift
+                ;
     }
 
 }
