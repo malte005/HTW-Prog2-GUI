@@ -13,7 +13,6 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import util.Helper;
 import javax.swing.ImageIcon;
 import javax.swing.SwingConstants;
-import model.kunde.AKunde;
 import util.PicTool;
 
 /**
@@ -134,304 +133,305 @@ public class MainFrame extends javax.swing.JFrame {
         jScrollPane1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
         jScrollPane1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane1.setViewportView(jListKundenliste);
+        //jListKundenliste.addListSelectionListener(new JList;
 
-        javax.swing.GroupLayout panelKundenlisteLayout = new javax.swing.GroupLayout(panelKundenliste);
-        panelKundenliste.setLayout(panelKundenlisteLayout);
-        panelKundenlisteLayout.setHorizontalGroup(
-            panelKundenlisteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKundenlisteLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
-            .addGroup(panelKundenlisteLayout.createSequentialGroup()
-                .addGap(203, 203, 203)
-                .addComponent(lblUeberschriftListe)
-                .addContainerGap(221, Short.MAX_VALUE))
-        );
-        panelKundenlisteLayout.setVerticalGroup(
-            panelKundenlisteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelKundenlisteLayout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(lblUeberschriftListe)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+            javax.swing.GroupLayout panelKundenlisteLayout = new javax.swing.GroupLayout(panelKundenliste);
+            panelKundenliste.setLayout(panelKundenlisteLayout);
+            panelKundenlisteLayout.setHorizontalGroup(
+                panelKundenlisteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelKundenlisteLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jScrollPane1)
+                    .addContainerGap())
+                .addGroup(panelKundenlisteLayout.createSequentialGroup()
+                    .addGap(203, 203, 203)
+                    .addComponent(lblUeberschriftListe)
+                    .addContainerGap(221, Short.MAX_VALUE))
+            );
+            panelKundenlisteLayout.setVerticalGroup(
+                panelKundenlisteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKundenlisteLayout.createSequentialGroup()
+                    .addGap(14, 14, 14)
+                    .addComponent(lblUeberschriftListe)
+                    .addGap(18, 18, 18)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
+                    .addContainerGap())
+            );
 
-        panelKundenbild.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 51)));
+            panelKundenbild.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 0, 51)));
 
-        lblUeberschriftKundenbild.setText("Kundenbild");
+            lblUeberschriftKundenbild.setText("Kundenbild");
 
-        javax.swing.GroupLayout panelKundenbildLayout = new javax.swing.GroupLayout(panelKundenbild);
-        panelKundenbild.setLayout(panelKundenbildLayout);
-        panelKundenbildLayout.setHorizontalGroup(
-            panelKundenbildLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelKundenbildLayout.createSequentialGroup()
-                .addGroup(panelKundenbildLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelKundenbildLayout.createSequentialGroup()
-                        .addGap(112, 112, 112)
-                        .addComponent(lblUeberschriftKundenbild))
-                    .addGroup(panelKundenbildLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(lblBild)))
-                .addContainerGap(117, Short.MAX_VALUE))
-        );
-        panelKundenbildLayout.setVerticalGroup(
-            panelKundenbildLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelKundenbildLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblUeberschriftKundenbild)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblBild)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+            javax.swing.GroupLayout panelKundenbildLayout = new javax.swing.GroupLayout(panelKundenbild);
+            panelKundenbild.setLayout(panelKundenbildLayout);
+            panelKundenbildLayout.setHorizontalGroup(
+                panelKundenbildLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKundenbildLayout.createSequentialGroup()
+                    .addGroup(panelKundenbildLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(panelKundenbildLayout.createSequentialGroup()
+                            .addGap(112, 112, 112)
+                            .addComponent(lblUeberschriftKundenbild))
+                        .addGroup(panelKundenbildLayout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(lblBild)))
+                    .addContainerGap(117, Short.MAX_VALUE))
+            );
+            panelKundenbildLayout.setVerticalGroup(
+                panelKundenbildLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelKundenbildLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lblUeberschriftKundenbild)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addComponent(lblBild)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            );
 
-        panelOption.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+            panelOption.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
 
-        lblUeberschriftOptionen.setText("Optionen");
+            lblUeberschriftOptionen.setText("Optionen");
 
-        btnPicture.setText("Bild wählen");
-        btnPicture.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnPictureActionPerformed(evt);
-            }
-        });
+            btnPicture.setText("Bild wählen");
+            btnPicture.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    btnPictureActionPerformed(evt);
+                }
+            });
 
-        jRadioButtonEndverbraucher.setText("Endverbraucher");
-        jRadioButtonEndverbraucher.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonEndverbraucherActionPerformed(evt);
-            }
-        });
+            jRadioButtonEndverbraucher.setText("Endverbraucher");
+            jRadioButtonEndverbraucher.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jRadioButtonEndverbraucherActionPerformed(evt);
+                }
+            });
 
-        jRadioButtonGrossverbraucher.setText("Großverbraucher");
-        jRadioButtonGrossverbraucher.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonGrossverbraucherActionPerformed(evt);
-            }
-        });
+            jRadioButtonGrossverbraucher.setText("Großverbraucher");
+            jRadioButtonGrossverbraucher.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jRadioButtonGrossverbraucherActionPerformed(evt);
+                }
+            });
 
-        jRadioButtonGesellschaft.setText("Gesellschaft");
-        jRadioButtonGesellschaft.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jRadioButtonGesellschaftActionPerformed(evt);
-            }
-        });
+            jRadioButtonGesellschaft.setText("Gesellschaft");
+            jRadioButtonGesellschaft.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jRadioButtonGesellschaftActionPerformed(evt);
+                }
+            });
 
-        javax.swing.GroupLayout panelOptionLayout = new javax.swing.GroupLayout(panelOption);
-        panelOption.setLayout(panelOptionLayout);
-        panelOptionLayout.setHorizontalGroup(
-            panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOptionLayout.createSequentialGroup()
-                .addContainerGap(34, Short.MAX_VALUE)
-                .addGroup(panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOptionLayout.createSequentialGroup()
-                        .addComponent(lblUeberschriftOptionen)
-                        .addGap(84, 84, 84))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOptionLayout.createSequentialGroup()
-                        .addGroup(panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jRadioButtonGrossverbraucher)
-                            .addComponent(jRadioButtonEndverbraucher)
-                            .addComponent(jRadioButtonGesellschaft))
-                        .addGap(53, 53, 53))))
-            .addGroup(panelOptionLayout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(btnPicture)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        panelOptionLayout.setVerticalGroup(
-            panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelOptionLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblUeberschriftOptionen)
-                .addGap(81, 81, 81)
-                .addComponent(jRadioButtonEndverbraucher)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButtonGrossverbraucher)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jRadioButtonGesellschaft)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnPicture)
-                .addGap(27, 27, 27))
-        );
+            javax.swing.GroupLayout panelOptionLayout = new javax.swing.GroupLayout(panelOption);
+            panelOption.setLayout(panelOptionLayout);
+            panelOptionLayout.setHorizontalGroup(
+                panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelOptionLayout.createSequentialGroup()
+                    .addContainerGap(34, Short.MAX_VALUE)
+                    .addGroup(panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOptionLayout.createSequentialGroup()
+                            .addComponent(lblUeberschriftOptionen)
+                            .addGap(84, 84, 84))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelOptionLayout.createSequentialGroup()
+                            .addGroup(panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jRadioButtonGrossverbraucher)
+                                .addComponent(jRadioButtonEndverbraucher)
+                                .addComponent(jRadioButtonGesellschaft))
+                            .addGap(53, 53, 53))))
+                .addGroup(panelOptionLayout.createSequentialGroup()
+                    .addGap(55, 55, 55)
+                    .addComponent(btnPicture)
+                    .addGap(0, 0, Short.MAX_VALUE))
+            );
+            panelOptionLayout.setVerticalGroup(
+                panelOptionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelOptionLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lblUeberschriftOptionen)
+                    .addGap(81, 81, 81)
+                    .addComponent(jRadioButtonEndverbraucher)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jRadioButtonGrossverbraucher)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(jRadioButtonGesellschaft)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnPicture)
+                    .addGap(27, 27, 27))
+            );
 
-        panelBestellung.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
+            panelBestellung.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
 
-        lblUeberschriftBestellung.setText("Bestellungen");
+            lblUeberschriftBestellung.setText("Bestellungen");
 
-        javax.swing.GroupLayout panelBestellungLayout = new javax.swing.GroupLayout(panelBestellung);
-        panelBestellung.setLayout(panelBestellungLayout);
-        panelBestellungLayout.setHorizontalGroup(
-            panelBestellungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBestellungLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblUeberschriftBestellung)
-                .addGap(488, 488, 488))
-        );
-        panelBestellungLayout.setVerticalGroup(
-            panelBestellungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelBestellungLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblUeberschriftBestellung)
-                .addContainerGap(214, Short.MAX_VALUE))
-        );
+            javax.swing.GroupLayout panelBestellungLayout = new javax.swing.GroupLayout(panelBestellung);
+            panelBestellung.setLayout(panelBestellungLayout);
+            panelBestellungLayout.setHorizontalGroup(
+                panelBestellungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelBestellungLayout.createSequentialGroup()
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblUeberschriftBestellung)
+                    .addGap(488, 488, 488))
+            );
+            panelBestellungLayout.setVerticalGroup(
+                panelBestellungLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelBestellungLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lblUeberschriftBestellung)
+                    .addContainerGap(214, Short.MAX_VALUE))
+            );
 
-        menuDatei.setText("Datei");
+            menuDatei.setText("Datei");
 
-        itemOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, 0));
-        itemOpen.setText("Öffnen");
-        itemOpen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemOpenActionPerformed(evt);
-            }
-        });
-        menuDatei.add(itemOpen);
+            itemOpen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, 0));
+            itemOpen.setText("Öffnen");
+            itemOpen.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemOpenActionPerformed(evt);
+                }
+            });
+            menuDatei.add(itemOpen);
 
-        itemSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, 0));
-        itemSave.setText("Speichern");
-        itemSave.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemSaveActionPerformed(evt);
-            }
-        });
-        menuDatei.add(itemSave);
-        menuDatei.add(jSeparator1);
+            itemSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, 0));
+            itemSave.setText("Speichern");
+            itemSave.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemSaveActionPerformed(evt);
+                }
+            });
+            menuDatei.add(itemSave);
+            menuDatei.add(jSeparator1);
 
-        itemOpenBinaer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
-        itemOpenBinaer.setText("Öffnen (binär)");
-        itemOpenBinaer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemOpenBinaerActionPerformed(evt);
-            }
-        });
-        menuDatei.add(itemOpenBinaer);
+            itemOpenBinaer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
+            itemOpenBinaer.setText("Öffnen (binär)");
+            itemOpenBinaer.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemOpenBinaerActionPerformed(evt);
+                }
+            });
+            menuDatei.add(itemOpenBinaer);
 
-        itemSaveBinaer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
-        itemSaveBinaer.setText("Speichern (binär)");
-        itemSaveBinaer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemSaveBinaerActionPerformed(evt);
-            }
-        });
-        menuDatei.add(itemSaveBinaer);
-        menuDatei.add(jSeparator2);
+            itemSaveBinaer.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+            itemSaveBinaer.setText("Speichern (binär)");
+            itemSaveBinaer.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemSaveBinaerActionPerformed(evt);
+                }
+            });
+            menuDatei.add(itemSaveBinaer);
+            menuDatei.add(jSeparator2);
 
-        menuDateiBeenden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
-        menuDateiBeenden.setText("Beenden");
-        menuDateiBeenden.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuDateiBeendenActionPerformed(evt);
-            }
-        });
-        menuDatei.add(menuDateiBeenden);
+            menuDateiBeenden.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_ESCAPE, 0));
+            menuDateiBeenden.setText("Beenden");
+            menuDateiBeenden.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    menuDateiBeendenActionPerformed(evt);
+                }
+            });
+            menuDatei.add(menuDateiBeenden);
 
-        menu.add(menuDatei);
+            menu.add(menuDatei);
 
-        menuBestellung.setText("Bestellung");
-        menu.add(menuBestellung);
+            menuBestellung.setText("Bestellung");
+            menu.add(menuBestellung);
 
-        menuKunde.setText("Kunde");
+            menuKunde.setText("Kunde");
 
-        itemKundeNeu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
-        itemKundeNeu.setText("neu");
-        itemKundeNeu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemKundeNeuActionPerformed(evt);
-            }
-        });
-        menuKunde.add(itemKundeNeu);
+            itemKundeNeu.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
+            itemKundeNeu.setText("neu");
+            itemKundeNeu.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemKundeNeuActionPerformed(evt);
+                }
+            });
+            menuKunde.add(itemKundeNeu);
 
-        itemKundeAendern.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
-        itemKundeAendern.setText("ändern");
-        itemKundeAendern.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemKundeAendernActionPerformed(evt);
-            }
-        });
-        menuKunde.add(itemKundeAendern);
+            itemKundeAendern.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.CTRL_MASK));
+            itemKundeAendern.setText("ändern");
+            itemKundeAendern.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemKundeAendernActionPerformed(evt);
+                }
+            });
+            menuKunde.add(itemKundeAendern);
 
-        itemKundeLeschen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DELETE, java.awt.event.InputEvent.CTRL_MASK));
-        itemKundeLeschen.setText("löschen");
-        itemKundeLeschen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemKundeLeschenActionPerformed(evt);
-            }
-        });
-        menuKunde.add(itemKundeLeschen);
+            itemKundeLeschen.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_DELETE, java.awt.event.InputEvent.CTRL_MASK));
+            itemKundeLeschen.setText("löschen");
+            itemKundeLeschen.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemKundeLeschenActionPerformed(evt);
+                }
+            });
+            menuKunde.add(itemKundeLeschen);
 
-        menu.add(menuKunde);
+            menu.add(menuKunde);
 
-        menuHilfe.setText("Hilfe");
+            menuHilfe.setText("Hilfe");
 
-        menuExtrasImpressum.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_MASK));
-        menuExtrasImpressum.setText("Autor");
-        menuExtrasImpressum.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuExtrasImpressumActionPerformed(evt);
-            }
-        });
-        menuHilfe.add(menuExtrasImpressum);
+            menuExtrasImpressum.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_MASK));
+            menuExtrasImpressum.setText("Autor");
+            menuExtrasImpressum.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    menuExtrasImpressumActionPerformed(evt);
+                }
+            });
+            menuHilfe.add(menuExtrasImpressum);
 
-        itemHilfeInfo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
-        itemHilfeInfo.setText("Info");
-        itemHilfeInfo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemHilfeInfoActionPerformed(evt);
-            }
-        });
-        menuHilfe.add(itemHilfeInfo);
+            itemHilfeInfo.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_I, java.awt.event.InputEvent.CTRL_MASK));
+            itemHilfeInfo.setText("Info");
+            itemHilfeInfo.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    itemHilfeInfoActionPerformed(evt);
+                }
+            });
+            menuHilfe.add(itemHilfeInfo);
 
-        menu.add(menuHilfe);
+            menu.add(menuHilfe);
 
-        setJMenuBar(menu);
+            setJMenuBar(menu);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(panelBestellung, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(panelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(panelKundenliste, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(panelKundenbild, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(panelOption, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(panelKundenliste, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelOption, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panelKundenbild, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(panelBestellung, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+            javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+            getContentPane().setLayout(layout);
+            layout.setHorizontalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addContainerGap()
+                            .addComponent(panelBestellung, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(10, 10, 10)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(panelHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(panelKundenliste, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(panelKundenbild, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(panelOption, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                    .addContainerGap())
+            );
+            layout.setVerticalGroup(
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(panelHeader, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(panelKundenliste, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panelOption, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panelKundenbild, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(panelBestellung, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap())
+            );
 
-        File datei = new File("./pics/FACE25.jpg");
-        ImageIcon pic =  PicTool.loadImage(datei);
+            File datei = new File("./pics/FACE25.jpg");
+            ImageIcon pic =  PicTool.loadImage(datei);
 
-        lblBild.setIcon(pic);
+            lblBild.setIcon(pic);
 
-        lblBild.setPreferredSize(new Dimension(pic.getIconWidth(), pic.getIconHeight()));
+            lblBild.setPreferredSize(new Dimension(pic.getIconWidth(), pic.getIconHeight()));
 
-        panelKundenbild.add(lblBild);
+            panelKundenbild.add(lblBild);
 
-        pack();
-    }// </editor-fold>//GEN-END:initComponents
+            pack();
+        }// </editor-fold>//GEN-END:initComponents
 
     private void menuDateiBeendenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuDateiBeendenActionPerformed
         int boxValue = JOptionPane.showConfirmDialog(null, "Sollen die Daten gespeichert werden?", "Speichern", JOptionPane.YES_NO_CANCEL_OPTION);
@@ -505,7 +505,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_itemSaveBinaerActionPerformed
 
     private void itemKundeNeuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemKundeNeuActionPerformed
-        NeuerKundeFrame neu = new NeuerKundeFrame();
+        NeuerKundeFrame neu = new NeuerKundeFrame(kv);
     }//GEN-LAST:event_itemKundeNeuActionPerformed
 
     private void btnPictureActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPictureActionPerformed

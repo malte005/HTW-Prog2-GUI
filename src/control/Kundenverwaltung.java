@@ -30,6 +30,22 @@ import util.KundenNummerVergeber;
 public class Kundenverwaltung implements Comparator<AKunde> {
 
     private final LinkedList<AKunde> KUNDENLISTE = new LinkedList<>();
+    private static Kundenverwaltung instance = null;
+
+    /**
+     * Singelton Pattern
+     *
+     * @return Instanz-Objekt von KundenNummerVergeber, indem der private
+     *         Konstuktor aufgerufen wird.
+     */
+    public static Kundenverwaltung getInstance() {
+        if (instance == null) {
+            instance = new Kundenverwaltung();
+        } else {
+            System.err.println("Es gibt schon ein Objekt KundnenNummerVergeber");
+        }
+        return instance;
+    }
 
     /**
      * Konstruktor
@@ -42,7 +58,7 @@ public class Kundenverwaltung implements Comparator<AKunde> {
      *
      * @param kunde Kundenobjekt wird übergeben
      */
-    public void addKunde(AKunde kunde) {
+    private void addKunde(AKunde kunde) {
         KUNDENLISTE.add(kunde);
     }
 
@@ -104,6 +120,10 @@ public class Kundenverwaltung implements Comparator<AKunde> {
         return result;
     }
 
+    /**
+     *
+     * @return Die Kundenliste wird zurückgegeben.
+     */
     public LinkedList<AKunde> getListe() {
         return KUNDENLISTE;
     }
@@ -154,7 +174,7 @@ public class Kundenverwaltung implements Comparator<AKunde> {
         for (AKunde KUNDE : KUNDENLISTE) {
             if (KUNDE.getNummer().equals(kunde.getNummer())) {
                 System.err.println("Rabatt vorher: " + KUNDE.getRabatt());
-                System.err.println("Rabatt übergeben: " +rabatt);
+                System.err.println("Rabatt übergeben: " + rabatt);
                 KUNDE.setAnschrift(anschrift);
                 KUNDE.setRabatt(rabatt);
                 System.err.println("Kunde nachher: " + KUNDE.getRabatt());

@@ -316,6 +316,7 @@
           <SubComponents>
             <Component class="javax.swing.JList" name="jListKundenliste">
               <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="//jListKundenliste.addListSelectionListener(new JList;"/>
                 <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jScrollPane1.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);&#xa;jScrollPane1.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);"/>
               </AuxValues>
             </Component>
